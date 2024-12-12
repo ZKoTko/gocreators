@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>GoCreators</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: url(assets/img/modal-bg.svg);">
+          
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 23 23">
+                <path stroke="#FBBF03" stroke-width="2" d="m1 1 20.5 20.5m0-20.5L1 21.5"/>
+              </svg>
+                         
+            </button>
+          
+            <div class="modal-title">
+              Request form
+            </div>
+            <div class="modal-content-1">
+              <form>
+                <div class="modal-input-wrapper">
+                  <p>Hi! My name is</p>
+                  <input type="text" placeholder="Sean John Combs">
+                </div>
+                <div class="modal-choose-wrapper">
+                  <p>I’m a</p>
+                  <div class="custom-radio-group">
+                    <label class="custom-radio" data-value="Option 1">
+                        <input type="radio" name="custom-radio" value="client" required>
+                        <span class="custom-radio-text">client</span>
+                    </label>
+                    <label class="custom-radio" data-value="Option 2">
+                        <input type="radio" name="custom-radio" value="creator">
+                        <span class="custom-radio-text">creator</span>
+                    </label>
+                </div> 
+                </div>
+                <div class="modal-input-wrapper">
+                  <p>contact me back at</p>
+                  <input type="text" placeholder="seanjohncombs@example.com">
+                </div>
+                <div class="modal-form-control">
+                  <button class="btn" type="submit">Submit</button>
+                  <p>By clicking Submit, you agree to our Terms of Service <br>
+                    and that you have read our Privacy Policy </p>
+                </div>
+              </form>
+            </div>
+            <div class="modal-content-2">
+              <div class="modal-finish-text">
+                <p>
+                  <span>Great!</span> <br>
+                  We'll get back to you!
+                </p>
+              </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-wrapper" style="background-image: url(assets/img/main-bg.png);">
+        <header>
+            <div class="wrap">
+                <div class="items-wrap">
+                  <div class="items marquee">
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="items marquee">
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                  </div>
+                </div>
+            </div>   
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.svg" alt="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR PROJECTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR CLIENTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR TEAM</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR CREATORS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR PROCESS</a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="nav-link">
+                            Learn more
+                            <img src="assets/img/dropdown-arrow.svg" alt="arrow">
+                        </div>
+                        <div class="nav-dropdown-wrapper">
+                            <div class="nav-dropdown">
+                                <a href="#">Link</a>
+                                <a href="#">Link</a>
+                            </div>
+                        </div>        
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <div class="banner-text">
+                            <h1>Boost</h1>
+                            <h2>your user acquisition with
+                                Our UGC* Creatives</h2>
+                            <p>
+                                We help apps win users with our high-performance creatives <br>
+                                <span>*UGC - User-Generated Content</span>
+                            </p>
+                        </div>
+                        <div class="banner-img-wrapper">
+                            <div class="banner-img-inner">
+                              <img src="assets/img/banner-img.svg" alt="banner-img">
+                            </div>
+                            <div class="banner-img-controls">
+                              <div class="banner-img-controls-wrapper">
+                                <div class="banner-img-control-item">
+                                  <a href="https://www.instagram.com/gocreatorsagency/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" fill="none" viewBox="0 0 28 27">
+                                      <path fill="#8E70CE" d="M8 0A7.5 7.5 0 0 0 .5 7.5v12A7.5 7.5 0 0 0 8 27h12a7.5 7.5 0 0 0 7.5-7.5v-12A7.5 7.5 0 0 0 20 0H8Zm15 3a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 23 3Zm-9 3a7.5 7.5 0 1 1-.002 15.002A7.5 7.5 0 0 1 14 6Zm0 3a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"/>
+                                    </svg>                                  
+                                  </a>
+                                </div>
+                                <div class="banner-img-control-item">
+                                  <a href="https://www.linkedin.com/company/gocreatorsagency/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" fill="none" viewBox="0 0 28 27">
+                                      <path fill="#8E70CE" d="M24.5 0h-21a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h21a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3Zm-15 21H5.715V10.5H9.5V21ZM7.541 8.575c-1.157 0-1.929-.77-1.929-1.8 0-1.029.771-1.8 2.056-1.8 1.157 0 1.93.772 1.93 1.8 0 1.03-.772 1.8-2.057 1.8ZM23 21h-3.663v-5.739c0-1.587-.977-1.953-1.343-1.953s-1.587.245-1.587 1.953V21h-3.784V10.5h3.784v1.466c.488-.855 1.465-1.466 3.296-1.466 1.832 0 3.297 1.466 3.297 4.761V21Z"/>
+                                    </svg>                                  
+                                  </a>
+                                </div>
+                                <div class="banner-img-control-item">
+                                  <a href="https://www.facebook.com/profile.php?id=100093373343316" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+                                      <path fill="#8E70CE" d="M15 .5C6.715.5 0 7.215 0 15.5c0 7.52 5.54 13.73 12.758 14.814V19.475H9.046v-3.944h3.71v-2.623c0-4.344 2.117-6.25 5.728-6.25 1.729 0 2.643.127 3.076.185v3.441h-2.463c-1.533 0-2.069 1.454-2.069 3.092v2.155h4.493l-.609 3.944H17.03v10.87C24.353 29.355 30 23.094 30 15.5c0-8.285-6.715-15-15-15Z"/>
+                                    </svg>                                  
+                                  </a>
+                                </div>
+                                <div class="banner-img-control-item">
+                                  <a href="mailto:hello@gocreators.io" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" fill="none" viewBox="0 0 31 32">
+                                      <path fill="#8E70CE" d="M17.913 17.188c-1.35.787-3.038.787-4.5 0l-9-5.4c-.676-.45-1.126-1.126-1.126-1.913v-6.3A2.785 2.785 0 0 1 6.1.763h19.35a2.785 2.785 0 0 1 2.813 2.812v6.3c0 .787-.45 1.463-1.126 1.912l-9.224 5.4Zm-6.3-9.45h8.325c.675 0 1.35-.675 1.35-1.463 0-.787-.675-1.35-1.35-1.35h-8.325c-.788 0-1.35.675-1.35 1.35-.113.788.562 1.463 1.35 1.463Zm0 4.162h8.325c.787 0 1.35-.675 1.35-1.35 0-.787-.675-1.35-1.35-1.35h-8.325c-.788 0-1.35.675-1.35 1.35-.113.675.562 1.35 1.35 1.35Zm17.212.45c.9-.563 2.137.113 2.137 1.238v15.525a2.136 2.136 0 0 1-2.137 2.137H2.612a2.136 2.136 0 0 1-2.137-2.137V13.588c0-1.125 1.125-1.688 2.137-1.238l10.8 6.412c1.35.788 3.15.788 4.5 0l10.913-6.412Z"/>
+                                    </svg>                                  
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="partners">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col">
+                    <div class="partners-item">
+                      <div class="partners-item-tiktok">
+                        <div class="partners-item-tiktok-wrapper">
+                          <img src="assets/img/tiktok-logo.svg" alt="tiktok">
+                          <span>TikTok Partner</span>
+                        </div>
+                      </div>
+                      <div class="partners-item-images">
+                        <img src="assets/img/flags.svg" alt="flags">
+                      </div>
+                      <div class="partners-item-text">
+                        <h3>WORLDWIDE CREATORS <br> EMEA, APAC, LATAM, NA</h3>
+                        <p>Creators from 60 different countries. Have a unique location request? <br>
+                          We'll do a custom search!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col">
+                    <div class="partners-item-percents">
+                      <div class="partners-item-percent-wrapper">
+                        <h3>150+</h3>
+                        <p>campaigns <br> so far in 2024</p>
+                      </div>
+                      <div class="partners-item-percent-wrapper">
+                        <h3>80%</h3>
+                        <p>retention rate <br> of our clients</p>
+                      </div>
+                      <div class="partners-item-percent-wrapper">
+                        <h3>200+</h3>
+                        <p>active UGC creators <br> and ambassadors</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="projects">
+              <div class="container">
+                <div class="projects-content">
+                  <div class="projects-control-bar">
+                    <h2>Recent <br> projects</h2>
+                    <div class="projects-control-bar-buttons-wrapper">
+                      <div class="projects-swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="79" height="50" fill="none" viewBox="0 0 79 50">
+                          <path stroke="#9769EE" stroke-linecap="round" stroke-width="6" d="M3.336 25C25.185 25 25.185 3.151 25.185 3.151M3.336 25c21.849 0 21.849 21.849 21.849 21.849M4 25h72"/>
+                        </svg>  
+                      </div>
+                      <div class="projects-swiper-button-next">    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" fill="none" viewBox="0 0 80 50">
+                          <path stroke="#9769EE" stroke-linecap="round" stroke-width="6" d="M76.336 25C54.487 25 54.487 3.151 54.487 3.151M76.336 25c-21.849 0-21.849 21.849-21.849 21.849M75.672 25h-72"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <a href="#">
+                      <button class="btn projects-control-btn">Learn more</button>
+                    </a>
+                  </div>
+                  <div class="projects-swiper-content">
+                    <div class="projects-swiper-main-wrapper">
+                      <div class="projects-swiper swiper-container">
+                        <!-- Custom wrapper -->
+                        <div class="projects-swiper-wrapper swiper-wrapper">
+                          <!-- Custom slides -->
+                          <div class="projects-swiper-slide swiper-slide" style="background: url(assets/img/project-preview.png);">
+                            <div class="projects-swiper-slide-wrapper">
+                              <div class="projects-swiper-slide-cat" style="background: rgba(151, 105, 238, 1);color: #fff;">
+                                #Category
+                              </div>
+                              <div class="projects-swiper-slide-cat" style="background: rgba(251, 191, 3, 1);color: rgba(0, 0, 0, 1);">
+                                ENG
+                              </div>
+                            </div>
+                            <a href="https://youtube.com/shorts/3kpwqxoMtiw?feature=share" class="projects-swiper-slide-link" target="_blank"></a>
+                          </div>
+                          <div class="projects-swiper-slide swiper-slide" style="background: url(assets/img/project-preview.png);">
+                            <div class="projects-swiper-slide-wrapper">
+                              <div class="projects-swiper-slide-cat" style="background: rgba(151, 105, 238, 1);color: #fff;">
+                                #Category
+                              </div>
+                              <div class="projects-swiper-slide-cat" style="background: rgba(251, 191, 3, 1);color: rgba(0, 0, 0, 1);">
+                                ENG
+                              </div>
+                            </div>
+                            <a href="https://youtube.com/shorts/3kpwqxoMtiw?feature=share" class="projects-swiper-slide-link" target="_blank"></a>
+                          </div>
+                          <div class="projects-swiper-slide swiper-slide" style="background: url(assets/img/project-preview.png);">
+                            <div class="projects-swiper-slide-wrapper">
+                              <div class="projects-swiper-slide-cat" style="background: rgba(151, 105, 238, 1);color: #fff;">
+                                #Category
+                              </div>
+                              <div class="projects-swiper-slide-cat" style="background: rgba(251, 191, 3, 1);color: rgba(0, 0, 0, 1);">
+                                ENG
+                              </div>
+                            </div>
+                            <a href="https://youtube.com/shorts/3kpwqxoMtiw?feature=share" class="projects-swiper-slide-link" target="_blank"></a>
+                          </div>
+                          <div class="projects-swiper-slide swiper-slide" style="background: url(assets/img/project-preview.png);">
+                            <div class="projects-swiper-slide-wrapper"></div>
+                          </div>
+                          <div class="projects-swiper-slide swiper-slide" style="background: url(assets/img/project-preview.png);">
+                            <div class="projects-swiper-slide-wrapper"></div>
+                          </div>
+                          <div class="projects-swiper-slide swiper-slide" style="background: url(assets/img/project-preview.png);">
+                            <div class="projects-swiper-slide-wrapper"></div>
+                          </div>
+                          <div class="projects-swiper-slide swiper-slide" style="background: url(assets/img/project-preview.png);">
+                            <div class="projects-swiper-slide-wrapper"></div>
+                          </div>
+                          <div class="projects-swiper-slide swiper-slide" style="background: url(assets/img/project-preview.png);">
+                            <div class="projects-swiper-slide-wrapper"></div>
+                          </div>
+                        </div>                  
+                      </div>
+                    </div>
+                  </div>        
+                </div>
+              </div>
+            </section>
+            <section class="stories">
+              <div class="container">
+                <div class="stories-title">
+                  <h2>Customer success stories</h2>
+                </div>
+                <div class="stories-controls-wrapper">
+                  <p>GoCreators isn’t just about creatives. We help apps grow with <br>
+                    high-performing UGC videos. Here are a few of our key results:
+                  </p>
+                  <div class="stories-controls">
+                    <button class="btn stories-control-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">View all</button>
+                    <div class="stories-swiper-buttons">
+                      <div class="stories-swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="22" fill="none" viewBox="0 0 33 22">
+                          <path stroke="#FBBF03" stroke-linecap="round" stroke-width="2.465" d="M1.573 11c8.976 0 8.976-8.977 8.976-8.977M1.573 11c8.976 0 8.976 8.977 8.976 8.977m-8.704-8.976h29.583"/>
+                        </svg>                        
+                      </div>
+                      <div class="stories-swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="22" fill="none" viewBox="0 0 33 22">
+                          <path stroke="#FBBF03" stroke-linecap="round" stroke-width="2.465" d="M31.428 11c-8.977 0-8.977-8.977-8.977-8.977M31.428 11c-8.977 0-8.977 8.977-8.977 8.977m8.704-8.976H1.573"/>
+                        </svg>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stories-swiper-wrapper">
+                  <div class="stories-swiper swiper-container">
+                    <div class="stories-swiper-wrapper swiper-wrapper">
+                      <div class="stories-swiper-slide swiper-slide">
+                        <div class="stories-slide-wrapper">
+                          <img src="assets/img/stories-1.svg" alt="stories-slide-logo">
+                          <div class="stories-slide-text">
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="stories-slide-text-percent">
+                                  <h3>57%</h3>
+                                  <p>lower CPI <br>
+                                    (vs full screen)</p>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="stories-slide-text-percent">
+                                  <h3>85%</h3>
+                                  <p>higher 6s VTR <br>
+                                    (vs early CTA)</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <a href="#" class="col stories-slide-link">inDrive</a>
+                              <div class="col stories-slide-btn-wrapper">
+                                <button class="btn stories-slide-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  Read story
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                                    <path fill="#232323" fill-rule="evenodd" d="M4 2h10v10h-1.468V4.507L3.038 14 2 12.962l9.493-9.494H4V2Z" clip-rule="evenodd"/>
+                                  </svg>
+                                </button>
+                              </div>        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stories-swiper-slide swiper-slide">
+                        <div class="stories-slide-wrapper">
+                          <img src="assets/img/stories-1.svg" alt="stories-slide-logo">
+                          <div class="stories-slide-text">
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="stories-slide-text-percent">
+                                  <h3>57%</h3>
+                                  <p>lower CPI <br>
+                                    (vs full screen)</p>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="stories-slide-text-percent">
+                                  <h3>85%</h3>
+                                  <p>higher 6s VTR <br>
+                                    (vs early CTA)</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <a href="#" class="col stories-slide-link">inDrive</a>
+                              <div class="col stories-slide-btn-wrapper">
+                                <button class="btn stories-slide-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  Read story
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                                    <path fill="#232323" fill-rule="evenodd" d="M4 2h10v10h-1.468V4.507L3.038 14 2 12.962l9.493-9.494H4V2Z" clip-rule="evenodd"/>
+                                  </svg>
+                                </button>
+                              </div>        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stories-swiper-slide swiper-slide">
+                        <div class="stories-slide-wrapper">
+                          <img src="assets/img/stories-1.svg" alt="stories-slide-logo">
+                          <div class="stories-slide-text">
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="stories-slide-text-percent">
+                                  <h3>57%</h3>
+                                  <p>lower CPI <br>
+                                    (vs full screen)</p>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="stories-slide-text-percent">
+                                  <h3>85%</h3>
+                                  <p>higher 6s VTR <br>
+                                    (vs early CTA)</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <a href="#" class="col stories-slide-link">inDrive</a>
+                              <div class="col stories-slide-btn-wrapper">
+                                <button class="btn stories-slide-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  Read story
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                                    <path fill="#232323" fill-rule="evenodd" d="M4 2h10v10h-1.468V4.507L3.038 14 2 12.962l9.493-9.494H4V2Z" clip-rule="evenodd"/>
+                                  </svg>
+                                </button>
+                              </div>        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="creators">
+              <img src="assets/img/block-bg.svg" alt="bg" class="creators-bg">
+                <div class="creators-content">
+                  <div class="creators-title">
+                    <h2>Our creators</h2>
+                  </div>
+                  <div class="creators-swiper-main-wrapper">
+                    <div class="creators-swiper swiper-container">
+                      <div class="creators-swiper-wrapper swiper-wrapper">
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);">
+                          <svg xmlns="http://www.w3.org/2000/svg" style="top: -26px;right: -10px;" width="58" height="59" fill="none" viewBox="0 0 58 59">
+                            <path fill="#DAE7F3" d="M34.49 25.867c10.776-42.2-4.085-23.263-12.862-8.52-34.77-13.392-18.977 3.348-6.733 13.392-29.907 26.928-7.16 18.133 7.95 10.369 20.575 34.406 16.613 11.006 12.06-4.995 40.744-10.844 16.7-11.349-.416-10.245Z"/>
+                          </svg>                          
+                        </div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);">
+                          <svg xmlns="http://www.w3.org/2000/svg" style="top: -17px;left: 48px;" width="48" height="39" fill="none" viewBox="0 0 48 39">
+                            <path fill="#373C52" d="M18.408 22.056c-33.9-6.789-12.96-8.007 1.748-7.767C3.015-2.425 16.976 3.784 26.1 8.98c-1.631-15.404 2.993-6.32 5.51.149 15.691-17.492 11.067-5.642 6.794 2.47 14.822-3.525 7.709 1.995 2.3 5.196 9.913 2.255 3.6 4.818-.796 5.818 15.639 16.132 2.852 10.158-5.496 5.154 2.248 13.985-2.945 5.646-5.822-.271-12.122 19.936-9.703 7.165-6.978-1.713-.932-1.52-13.48 7.024-3.204-3.726Z"/>
+                          </svg>                          
+                        </div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                        <div class="creators-swiper-slide swiper-slide" style="background: url(assets/img/creator-slide.svg);"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="creator-stats">     
+                      <div class="creator-stat-item">
+                        <h3>50+</h3>
+                        <p>countries</p>
+                      </div>
+                      <div class="creator-stat-item">
+                        <h3>50+</h3>
+                        <p>countries</p>
+                      </div>
+                      <div class="creator-stat-item">
+                        <h3>50+</h3>
+                        <p>countries</p>
+                      </div>
+                    </div>
+                    <div class="creator-stats-title">
+                       Multi-platform use:
+                    </div>
+                  </div> 
+                  <div class="creators-platforms">
+                    <div class="creators-platforms-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="90" height="83" fill="none" viewBox="0 0 71 83">
+                        <path fill="#3B5998" d="M33.014 79.014c20.779-1.677 36.265-19.88 34.588-40.66-1.677-20.78-19.88-36.265-40.66-34.588-20.78 1.676-36.265 19.88-34.588 40.66 1.676 20.779 19.88 36.265 40.66 34.588Z"/>
+                        <path fill="#fff" d="m39.555 42.1-6.713.541 1.984 24.596-10.171.82-1.985-24.595-4.837.39-.698-8.643 4.838-.39-.452-5.594c-.322-4 1.072-10.417 9.434-11.092l7.538-.576.676 8.39-5.466.441c-.897.072-2.122.622-1.968 2.53l.41 5.087 7.602-.613-.192 8.708Z"/>
+                      </svg>         
+                      <p>Facebook</p>             
+                    </div>
+                    <div class="creators-platforms-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" fill="none" viewBox="0 0 84 84">
+                        <g clip-path="url(#a)">
+                          <path fill="#000" stroke="#000" stroke-width="1.797" d="M43.669 49.81a6.37 6.37 0 0 1-3.674 6.495 6.403 6.403 0 0 1-2.315.575 6.344 6.344 0 0 1-2.996-.563l8.985-6.508Zm0 0-1.168-10.47 1.168 10.47Zm16.843-19.08-.1-.893h-.001l-.11-.972a.896.896 0 0 0-.365-.645l-1.65-1.203.123 1.1a9.953 9.953 0 0 1-5.331-1.387 9.989 9.989 0 0 1-4.438-5.56 10.05 10.05 0 0 1-.4-1.838l-.108-.883-.884.099-6.995.786-.893.1.1.893 2.148 19.112v.001l1.168 10.469a5.472 5.472 0 0 1-3.157 5.58 5.505 5.505 0 0 1-1.99.494 5.446 5.446 0 0 1-2.572-.483 5.472 5.472 0 0 1-3.175-4.283c-.387-3.032 1.79-5.788 4.831-6.13a5.5 5.5 0 0 1 1.747.083l1.217.255-.139-1.235-.587-5.224-.211-1.878-.087-.77-.774-.027c-.717-.026-1.44 0-2.166.082a14.395 14.395 0 0 0-10.205 6.013 14.102 14.102 0 0 0-2.585 8.852 14.085 14.085 0 0 0 5.392 10.431 14.396 14.396 0 0 0 10.578 3.005 14.757 14.757 0 0 0 2.13-.399 14.352 14.352 0 0 0 7.517-4.878c2.39-2.96 3.482-6.661 3.076-10.422v-.006L50.02 35.056a18.69 18.69 0 0 0 10.27 1.746l.892-.1-.1-.893-.57-5.079ZM5.171 45.87C2.902 25.65 17.457 7.41 37.677 5.137c20.22-2.272 38.46 12.283 40.731 32.503C80.68 57.86 66.124 76.1 45.904 78.372 25.684 80.644 7.444 66.09 5.173 45.87Z"/>
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M.065 8.46 75.085.03l8.43 75.02-75.02 8.43z"/>
+                          </clipPath>
+                        </defs>
+                      </svg>  
+                      <p>TikTok</p>                    
+                    </div>
+                    <div class="creators-platforms-item">
+                      <img src="assets/img/unity.svg" alt="unity">
+                      <p>Unity</p>
+                    </div>
+                    <div class="creators-platforms-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" fill="none" viewBox="0 0 81 81">
+                        <g clip-path="url(#a)">
+                          <path fill="#5C5560" d="M42.986 77.543C63.65 76.146 79.27 58.263 77.872 37.6 76.475 16.936 58.592 1.317 37.928 2.714 17.265 4.11 1.646 21.994 3.042 42.658 4.44 63.32 22.322 78.94 42.986 77.542Z"/>
+                          <path fill="#EEE" d="M42.986 77.543C63.65 76.146 79.27 58.263 77.872 37.6 76.475 16.936 58.592 1.317 37.928 2.714 17.265 4.11 1.646 21.994 3.042 42.658 4.44 63.32 22.322 78.94 42.986 77.542Z"/>
+                          <path fill="#FBBB00" d="m72.339 31.805-13.74.928-17.835 1.206.88 13.004 17.577-1.188a19.636 19.636 0 0 1-7.753 10.573 19.479 19.479 0 0 1-9.69 3.34c-8.379.567-15.882-4.224-19.159-11.445a19.495 19.495 0 0 1-1.702-6.774c-.15-2.223.077-4.385.625-6.421 2.118-7.853 9.026-13.86 17.594-14.44 3.795-.257 7.41.586 10.533 2.256l10.06-9.438a32.809 32.809 0 0 0-21.494-6.149c-12.704.859-23.238 8.81-27.996 19.728A32.783 32.783 0 0 0 7.586 42.35a32.798 32.798 0 0 0 4.97 15.313C18.804 67.585 30.161 73.846 42.68 73a32.807 32.807 0 0 0 20.09-8.628c5.477-5.048 9.214-11.91 10.305-19.554.321-2.246.414-4.558.255-6.911a32.987 32.987 0 0 0-.99-6.102Z"/>
+                          <path fill="#28B446" d="m62.767 64.37.002.002A32.809 32.809 0 0 1 42.679 73c-12.518.846-23.875-5.415-30.123-15.337l10.063-9.44c3.277 7.221 10.78 12.012 19.16 11.446a19.48 19.48 0 0 0 9.689-3.34l11.299 8.041Z"/>
+                          <path fill="#518EF8" d="M72.339 31.804c.512 1.963.848 4.004.99 6.102a33.012 33.012 0 0 1-.255 6.912c-1.091 7.644-4.828 14.506-10.305 19.554l-.002-.002-11.3-8.042a19.634 19.634 0 0 0 7.753-10.573l-17.577 1.188-.879-13.004 17.834-1.206 13.741-.929Z"/>
+                          <path fill="#FC3F1D" d="m59.728 13.407-10.06 9.438a19.473 19.473 0 0 0-10.532-2.257c-8.568.58-15.476 6.587-17.594 14.44l-11.3-8.043h-.003c4.758-10.918 15.292-18.87 27.996-19.728a32.807 32.807 0 0 1 21.493 6.15Z"/>
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M.513 5.243 75.343.185 80.4 75.014 5.57 80.072z"/>
+                          </clipPath>
+                        </defs>
+                      </svg>                   
+                      <p>Google</p>   
+                    </div>
+                    <div class="creators-platforms-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 80 80">
+                        <path fill="#EA5F9E" d="M42.178 77.598c20.816-1.125 36.779-18.912 35.654-39.728C76.707 17.053 58.919 1.09 38.103 2.216 17.287 3.34 1.323 21.128 2.449 41.944c1.125 20.817 18.912 36.78 39.729 35.654Z"/>
+                        <path fill="#EA5F9E" d="M77.832 37.87C76.707 17.052 58.92 1.09 38.103 2.214l4.075 75.383c20.816-1.125 36.779-18.912 35.654-39.729Z"/>
+                        <path fill="#fff" d="M39.13 21.228a18.706 18.706 0 1 0 2.02 37.358 18.706 18.706 0 0 0-2.02-37.358ZM40.725 50.7a10.81 10.81 0 1 1-1.168-21.587A10.81 10.81 0 0 1 40.724 50.7Zm17.348-28.714a3.948 3.948 0 1 0-.427-7.885 3.948 3.948 0 0 0 .427 7.885Z"/>
+                      </svg>     
+                      <p>Instagram</p>                 
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section class="work">
+              <div class="container">
+                <div class="work-title">
+                  <h2>HOW WE WORK</h2>
+                </div>
+                <div class="work-items-wrapper row">
+                  <div class="col-xl-4 col">
+                    <div class="work-item">
+                      <div class="work-item-wrapper">
+                        <div class="work-item-bar">2-3 days</div>
+                        <p>Fill un the campaign <br>
+                          <span>brief form</span>
+                        </p>
+                      </div>
+                      <img src="assets/img/work-arrow1.svg" alt="work-arrow" id="work-arrow-1">
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col">
+                    <div class="work-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" fill="none" viewBox="0 0 63 63">
+                        <path fill="#FBBF03" d="m36.685 11.844 1.732 6.08c.17.598.782.95 1.386.8l6.13-1.538c5.26-1.316 8.959 5.084 5.185 8.978l-4.397 4.542a1.149 1.149 0 0 0 0 1.594l4.397 4.542c3.774 3.9.076 10.3-5.185 8.978l-6.13-1.537a1.15 1.15 0 0 0-1.386.8l-1.732 6.073c-1.487 5.216-8.877 5.216-10.37 0l-1.732-6.08a1.148 1.148 0 0 0-1.386-.8l-6.13 1.538c-5.26 1.316-8.959-5.084-5.185-8.978l4.397-4.542a1.149 1.149 0 0 0 0-1.594l-4.397-4.542c-3.774-3.9-.076-10.3 5.185-8.978l6.13 1.537a1.15 1.15 0 0 0 1.386-.8l1.732-6.08c1.487-5.21 8.883-5.21 10.37.007Z"/>
+                        <path fill="#8872B1" d="M10.32 13.444a2.088 2.088 0 0 1-.58.485c-.214.12-.435.19-.662.208-.226.025-.453 0-.674-.07a1.806 1.806 0 0 1-.623-.346 1.71 1.71 0 0 1-.624-1.222c-.013-.233.025-.46.1-.687a2.17 2.17 0 0 1 .385-.655c.195-.226.41-.403.643-.523.233-.12.472-.182.724-.182l.032.68a1.168 1.168 0 0 0-.87.422 1.128 1.128 0 0 0-.283.807c.012.138.05.27.113.396.07.127.164.24.284.347.12.1.245.176.384.22a1 1 0 0 0 .806-.07c.126-.068.246-.163.353-.282a1.4 1.4 0 0 0 .233-.397 1.34 1.34 0 0 0 .082-.492l.724.026a2.03 2.03 0 0 1-.17.699 2.27 2.27 0 0 1-.378.636Zm.012-.844-.976-.825.466-.548 1.052.894-.542.479Zm3.963-2.955a2.074 2.074 0 0 1-.668.353 1.86 1.86 0 0 1-.693.076 1.716 1.716 0 0 1-.655-.196 1.798 1.798 0 0 1-.542-.466 1.736 1.736 0 0 1-.321-.636 1.767 1.767 0 0 1-.038-.68c.038-.227.113-.448.24-.656a2.01 2.01 0 0 1 .503-.56 2.1 2.1 0 0 1 .662-.353c.233-.07.46-.095.693-.076.233.019.447.088.649.202.201.113.384.264.541.466.158.202.265.41.322.636.063.227.075.454.037.68a1.72 1.72 0 0 1-.239.656c-.113.201-.283.39-.491.554Zm-.41-.523a1.13 1.13 0 0 0 .284-.321c.069-.12.107-.252.126-.39a.999.999 0 0 0-.038-.41 1.096 1.096 0 0 0-.208-.397 1.133 1.133 0 0 0-.334-.296 1.064 1.064 0 0 0-.39-.132 1.005 1.005 0 0 0-.41.031 1.147 1.147 0 0 0-.662.517.95.95 0 0 0-.126.39c-.012.139 0 .271.038.41.038.138.107.264.208.397.101.126.208.227.334.296.12.07.252.113.39.132a.98.98 0 0 0 .404-.031c.132-.038.264-.101.384-.196Zm5.349-2.582a2.045 2.045 0 0 1-.712.214c-.24.025-.466 0-.687-.063a1.741 1.741 0 0 1-.598-.328 1.881 1.881 0 0 1-.636-1.26 1.7 1.7 0 0 1 .454-1.266c.163-.177.358-.328.591-.441.265-.133.523-.208.781-.22a1.48 1.48 0 0 1 .738.131l-.246.643a1.1 1.1 0 0 0-.945.025c-.145.07-.258.158-.353.271a.99.99 0 0 0-.252.769 1.244 1.244 0 0 0 .397.788c.107.094.227.163.36.207a.98.98 0 0 0 .409.044c.145-.012.283-.056.428-.126.151-.075.277-.176.372-.302.094-.126.163-.277.208-.447l.667.189c-.056.252-.17.472-.334.674a1.91 1.91 0 0 1-.642.497Zm3.396-1.5-.933-3.27 1.418-.403c.29-.082.56-.107.794-.076.239.032.44.126.604.271a1.2 1.2 0 0 1 .353.58c.07.246.07.472.006.68a1.095 1.095 0 0 1-.378.542 1.914 1.914 0 0 1-.718.353L22.774 4l.252-.428.353 1.241-.75.227Zm.434-1.373-.447-.265.958-.271c.233-.063.39-.164.478-.296.089-.132.107-.29.057-.473a.522.522 0 0 0-.296-.365c-.145-.063-.334-.063-.567 0l-.951.27.245-.459.523 1.859Zm1.65.78-1.158-.95.812-.234 1.16.952-.813.233Zm3.85-1.328 1.84-.17.056.63-2.614.239-.315-3.383 2.558-.24.056.63L28.37.99l.195 2.13Zm-.189-1.393 1.632-.151.057.611-1.632.151-.057-.61Zm4.064 1.808L34.266.296l.775.076L36.23 3.9l-.819-.082-.957-3.106.315.031-1.531 2.867-.8-.076Zm.825-.655.252-.573 1.751.17.145.611-2.148-.208Zm5.582 1.644.743-2.652-1.046-.296.17-.617 2.854.8-.176.617-1.04-.296-.743 2.652-.762-.208Zm5.292 2.054a1.99 1.99 0 0 1-.605-.447 1.718 1.718 0 0 1-.466-1.266 1.828 1.828 0 0 1 .617-1.254c.177-.151.378-.258.599-.328.22-.069.453-.088.693-.069.24.019.479.094.724.208.24.12.441.264.605.44.164.177.284.373.365.593.082.214.114.441.101.674-.012.233-.075.46-.189.693a1.79 1.79 0 0 1-.434.567 1.593 1.593 0 0 1-.599.328c-.22.07-.454.088-.693.07a1.994 1.994 0 0 1-.718-.209Zm.29-.598c.138.069.27.107.41.113a1.1 1.1 0 0 0 .402-.057.952.952 0 0 0 .353-.208 1.11 1.11 0 0 0 .265-.359c.069-.145.113-.29.12-.428a1.03 1.03 0 0 0-.592-1.02 1.03 1.03 0 0 0-.417-.114.965.965 0 0 0-.403.057 1.005 1.005 0 0 0-.353.208 1.11 1.11 0 0 0-.264.359c-.07.145-.114.29-.12.428-.013.139.006.277.05.41a.938.938 0 0 0 .202.352c.095.101.208.19.347.259Zm3.389 2.665 2.079-2.69 1.166.9c.239.19.415.385.529.599.113.214.163.428.145.649-.02.22-.107.428-.259.63-.157.202-.34.34-.541.41a1.178 1.178 0 0 1-.662.018c-.233-.056-.466-.182-.712-.365l-.819-.636.491-.05-.787 1.02-.63-.485Zm1.36-.466-.056-.517.788.611c.189.145.365.214.523.208.157-.006.296-.082.415-.233.114-.151.158-.303.12-.454-.038-.157-.145-.308-.334-.453l-.787-.611.51-.076-1.178 1.525Zm.347 1.789.082-1.5.668.517-.082 1.5-.668-.517Zm3.062 3.03a2.783 2.783 0 0 1-.44-.655 1.745 1.745 0 0 1-.19-.643l.617-.195a1.979 1.979 0 0 0 .48 1.07c.1.114.2.203.29.247.087.05.163.075.238.069a.25.25 0 0 0 .183-.076c.07-.063.101-.132.088-.22a.865.865 0 0 0-.088-.296c-.05-.114-.113-.227-.183-.353a5.642 5.642 0 0 1-.195-.39 1.42 1.42 0 0 1-.126-.404.872.872 0 0 1 .025-.403.802.802 0 0 1 .265-.372.995.995 0 0 1 .498-.24c.189-.03.39 0 .598.095.214.095.429.259.636.498.145.158.265.334.366.523.1.189.164.378.195.554l-.605.208a2 2 0 0 0-.428-.876 1.202 1.202 0 0 0-.29-.245.414.414 0 0 0-.24-.063.32.32 0 0 0-.188.082.261.261 0 0 0-.095.226.765.765 0 0 0 .095.297c.056.107.12.226.189.352.07.126.138.259.195.391.057.132.1.265.126.403a.848.848 0 0 1-.019.397.817.817 0 0 1-.252.372.985.985 0 0 1-.498.233 1.118 1.118 0 0 1-.604-.1c-.215-.077-.429-.247-.643-.486ZM32.57 33.05c.574-2.942.31-3.919.045-5.601-.41-2.627-.265-4.574 3.767-4.712 4.032-.139 5.305 1.07 5.437 4.807.133 3.735-2.413 3.83-3.2 2.425-.788-1.399.132-3.106-1.008-3.106-1.82 0-2.98 8.94-.567 8.896 2.413-.044-.044-3.598 2.715-3.83 2.76-.234 2.936 6.117-.132 7.56-3.34 1.574-7.188.655-7.409-1.676-.22-2.332.353-4.763.353-4.763Zm-10.999 1.096c.536-3.34.126-6.432 0-8.694-.126-2.256 2.886-2.533 6.092-2.287 3.2.246 3.724 4.832 2.041 6.105-1.682 1.272-2.457.472-2.38-.687.094-1.53-1.746-1.984-1.765.195-.019 2.174-.687 4.46-.246 5.696.441 1.234 2.363 1.84 2.489.384.082-.933-1.096-.164-1.588-1.563-.15-.428-.491-2.035 2.684-1.896 3.175.139 3.15 3.604 2.489 5.487-.549 1.563-2.564 3.472-6.943 2.924-4.378-.549-3.339-2.716-2.873-5.664Zm36.616-6.936.157.56c.013.057.07.089.126.076l.567-.139c.485-.12.826.467.48.826l-.404.415c-.038.045-.038.108 0 .145l.403.416c.347.36.006.951-.479.825l-.567-.138a.103.103 0 0 0-.126.075l-.157.561c-.139.479-.82.479-.958 0l-.157-.56a.103.103 0 0 0-.126-.076l-.567.138c-.485.12-.826-.466-.48-.825l.404-.416c.038-.044.038-.107 0-.145l-.403-.415c-.347-.36-.006-.952.479-.826l.567.139a.103.103 0 0 0 .126-.076l.157-.56c.139-.48.82-.48.958 0Zm-52.417 0 .158.56c.013.057.07.089.126.076l.567-.139c.485-.12.826.467.48.826l-.404.415c-.038.045-.038.108 0 .145l.403.416c.347.36.006.951-.479.825l-.567-.138a.103.103 0 0 0-.126.075l-.157.561c-.139.479-.82.479-.958 0l-.157-.56a.103.103 0 0 0-.126-.076l-.567.138c-.485.12-.826-.466-.48-.825l.404-.416c.038-.044.038-.107 0-.145l-.403-.415c-.347-.36-.006-.952.479-.826l.567.139a.103.103 0 0 0 .126-.076l.157-.56c.139-.48.82-.48.958 0Zm2.32 23.568a2.054 2.054 0 0 1-.347-.668 1.606 1.606 0 0 1-.063-.687 1.74 1.74 0 0 1 .208-.648 1.66 1.66 0 0 1 .472-.536c.202-.151.416-.258.643-.315.226-.057.453-.063.68-.031.227.037.447.12.649.245.208.126.39.303.554.517.183.24.31.485.372.737.07.252.076.504.025.75l-.674-.114a1.224 1.224 0 0 0-.012-.504 1.283 1.283 0 0 0-.548-.75.995.995 0 0 0-.8-.12c-.14.039-.272.108-.398.209-.126.094-.22.201-.296.327a1.004 1.004 0 0 0-.107.807c.038.138.107.277.202.403a1.29 1.29 0 0 0 .806.498l-.182.699a2.131 2.131 0 0 1-.65-.315 2.553 2.553 0 0 1-.535-.504Zm.824.195 1.015-.775.434.574-1.096.838-.353-.637Zm3.384 4.247a2.06 2.06 0 0 1-.473-.586 1.832 1.832 0 0 1-.208-.668c-.025-.233 0-.454.07-.68.069-.221.189-.429.352-.618.17-.195.353-.34.567-.441.208-.1.429-.157.662-.164.233-.012.46.025.686.107a2 2 0 0 1 .643.385c.202.176.36.371.473.58.113.213.182.434.207.66.026.234 0 .454-.069.681-.07.22-.189.428-.359.624-.164.189-.353.34-.56.44a1.724 1.724 0 0 1-1.348.063 1.939 1.939 0 0 1-.643-.384Zm.428-.505a1.058 1.058 0 0 0 .775.265c.139-.012.27-.05.397-.113a1.18 1.18 0 0 0 .346-.277 1.104 1.104 0 0 0 .284-.794.927.927 0 0 0-.107-.39 1.107 1.107 0 0 0-.265-.335 1.058 1.058 0 0 0-.775-.264 1.1 1.1 0 0 0-.397.113 1.18 1.18 0 0 0-.346.277 1.104 1.104 0 0 0-.284.794c.007.139.044.27.107.39s.152.234.265.334Zm4.844 4.19a1.92 1.92 0 0 1-.573-.473 1.668 1.668 0 0 1-.327-.604 1.745 1.745 0 0 1-.063-.674c.025-.234.1-.46.227-.68.126-.221.283-.404.466-.549a1.701 1.701 0 0 1 1.304-.328c.24.038.472.12.7.246.258.145.465.321.623.53.157.207.258.434.302.686l-.674.158a1.12 1.12 0 0 0-.189-.454 1.177 1.177 0 0 0-.781-.466.995.995 0 0 0-.775.214 1.133 1.133 0 0 0-.29.346 1.124 1.124 0 0 0-.145.423.989.989 0 0 0 .215.774c.088.114.201.208.34.284a1.103 1.103 0 0 0 .945.063l.214.655c-.24.095-.485.126-.743.101a1.867 1.867 0 0 1-.775-.252Zm3.863 1.77 1.09-3.219 1.392.473c.29.094.523.226.7.39.176.164.289.353.346.567.056.214.044.441-.038.68a1.22 1.22 0 0 1-.378.568c-.17.132-.378.214-.618.233a2.05 2.05 0 0 1-.793-.114l-.983-.334.447-.207-.416 1.222-.75-.259Zm1.134-.888-.22-.466.944.321c.227.076.416.088.567.025.151-.056.252-.176.315-.352a.515.515 0 0 0-.038-.473c-.082-.139-.24-.24-.466-.321l-.945-.322.46-.239-.617 1.827Zm.913 1.581-.416-1.442.8.27.416 1.443-.8-.27Zm4.486.385 1.833.258-.088.624-2.608-.366.472-3.364 2.545.36-.088.623-1.77-.252-.296 2.117Zm.138-1.393 1.62.227-.089.611-1.619-.227.088-.61Zm4.12 2.438 1.342-3.465.775-.037 1.689 3.32-.826.038-1.392-2.936.315-.013-1.096 3.056-.806.037Zm.725-.762.17-.605 1.758-.088.233.586-2.161.107Zm6.231.006-.618-2.684-1.058.246-.145-.623 2.885-.668.145.623-1.058.246.617 2.684-.768.176Zm5.94-1.871c-.245.107-.49.17-.73.177a1.7 1.7 0 0 1-.693-.101 1.614 1.614 0 0 1-.58-.353 1.72 1.72 0 0 1-.41-.586 1.76 1.76 0 0 1-.157-.7 1.73 1.73 0 0 1 .523-1.24c.17-.17.378-.309.624-.416a2.12 2.12 0 0 1 .73-.183c.24-.012.473.02.687.101.22.076.41.195.58.353.17.157.309.353.41.586.1.233.15.466.157.7a1.707 1.707 0 0 1-.523 1.24c-.17.177-.378.315-.617.422Zm-.277-.61a1.2 1.2 0 0 0 .353-.24.931.931 0 0 0 .214-.347c.05-.132.07-.264.07-.403a1.275 1.275 0 0 0-.101-.435 1.138 1.138 0 0 0-.252-.371.973.973 0 0 0-.347-.227 1.091 1.091 0 0 0-.403-.076.997.997 0 0 0-.416.095 1.106 1.106 0 0 0-.352.245.942.942 0 0 0-.215.347.969.969 0 0 0-.063.403c.007.139.038.284.101.435.063.151.151.27.252.372.101.1.214.176.34.226a.985.985 0 0 0 .819-.025Zm4.499-1.683L47.389 55.1l1.203-.844c.245-.177.491-.284.73-.334.24-.044.46-.025.662.056.202.082.378.227.523.435.145.208.227.422.233.643.006.22-.05.428-.176.636a1.913 1.913 0 0 1-.561.567l-.85.599.1-.485.744 1.058-.655.447Zm-.045-1.443-.51-.1.813-.574c.195-.138.315-.283.353-.44.044-.158.006-.31-.101-.467-.107-.151-.24-.24-.403-.252-.158-.012-.334.05-.536.19l-.813.572.076-.51 1.121 1.581Zm1.815.196-1.411-.517.693-.485 1.404.517-.686.485Zm3.685-3.144a2.867 2.867 0 0 1-.623.485 1.824 1.824 0 0 1-.624.233l-.24-.605a1.99 1.99 0 0 0 1.04-.554c.107-.113.183-.214.227-.302a.456.456 0 0 0 .056-.24.265.265 0 0 0-.088-.176.254.254 0 0 0-.227-.076.808.808 0 0 0-.29.114c-.106.063-.22.132-.34.208-.12.075-.245.15-.371.22a2.08 2.08 0 0 1-.397.158.872.872 0 0 1-.403 0 .885.885 0 0 1-.39-.233.981.981 0 0 1-.272-.486 1.02 1.02 0 0 1 .057-.604c.082-.22.233-.441.453-.668.152-.151.316-.284.498-.397.183-.114.366-.19.542-.233l.252.592a1.915 1.915 0 0 0-.844.492 1.339 1.339 0 0 0-.227.302.396.396 0 0 0-.044.245c.012.07.044.133.094.183a.26.26 0 0 0 .233.076.766.766 0 0 0 .29-.114c.101-.063.215-.132.34-.214.12-.082.246-.151.378-.22.133-.07.259-.12.391-.151a.846.846 0 0 1 .397-.007.836.836 0 0 1 .39.227.907.907 0 0 1 .265.479c.038.189.02.39-.063.61-.082.202-.233.423-.46.656Z"/>
+                      </svg>                      
+                      <div class="work-item-wrapper">
+                        <div class="work-item-bar">2-3 days</div>
+                        <p>Scripts/ concepts <br>
+                          preparation</span>
+                        </p>
+                      </div>
+                      <img src="assets/img/work-arrow2.svg" alt="work-arrow" id="work-arrow-2">
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col">
+                    <div class="work-item">
+                      <div class="work-item-wrapper">
+                        <div class="work-item-bar">2-3 days</div>
+                        <p>Creators/ concepts <br>
+                          approval</span>
+                        </p>
+                      </div>
+                      <img src="assets/img/work-arrow3.svg" alt="work-arrow" id="work-arrow-3">
+                    </div>
+                  </div> 
+                  <div class="col-xl-4 col">
+                    <div class="work-item">
+                      <div class="work-item-wrapper">
+                        <div class="work-item-bar">2-3 days</div>
+                        <p>Fill un the campaign <br>
+                          <span>brief form</span>
+                        </p>
+                      </div>
+                      <img src="assets/img/work-arrow4.svg" alt="work-arrow" id="work-arrow-4">
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col">
+                    <div class="work-item">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" fill="none" viewBox="0 0 63 63">
+                        <path fill="#FBBF03" d="m36.685 11.844 1.732 6.08c.17.598.782.95 1.386.8l6.13-1.538c5.26-1.316 8.959 5.084 5.185 8.978l-4.397 4.542a1.149 1.149 0 0 0 0 1.594l4.397 4.542c3.774 3.9.076 10.3-5.185 8.978l-6.13-1.537a1.15 1.15 0 0 0-1.386.8l-1.732 6.073c-1.487 5.216-8.877 5.216-10.37 0l-1.732-6.08a1.148 1.148 0 0 0-1.386-.8l-6.13 1.538c-5.26 1.316-8.959-5.084-5.185-8.978l4.397-4.542a1.149 1.149 0 0 0 0-1.594l-4.397-4.542c-3.774-3.9-.076-10.3 5.185-8.978l6.13 1.537a1.15 1.15 0 0 0 1.386-.8l1.732-6.08c1.487-5.21 8.883-5.21 10.37.007Z"/>
+                        <path fill="#8872B1" d="M10.32 13.444a2.088 2.088 0 0 1-.58.485c-.214.12-.435.19-.662.208-.226.025-.453 0-.674-.07a1.806 1.806 0 0 1-.623-.346 1.71 1.71 0 0 1-.624-1.222c-.013-.233.025-.46.1-.687a2.17 2.17 0 0 1 .385-.655c.195-.226.41-.403.643-.523.233-.12.472-.182.724-.182l.032.68a1.168 1.168 0 0 0-.87.422 1.128 1.128 0 0 0-.283.807c.012.138.05.27.113.396.07.127.164.24.284.347.12.1.245.176.384.22a1 1 0 0 0 .806-.07c.126-.068.246-.163.353-.282a1.4 1.4 0 0 0 .233-.397 1.34 1.34 0 0 0 .082-.492l.724.026a2.03 2.03 0 0 1-.17.699 2.27 2.27 0 0 1-.378.636Zm.012-.844-.976-.825.466-.548 1.052.894-.542.479Zm3.963-2.955a2.074 2.074 0 0 1-.668.353 1.86 1.86 0 0 1-.693.076 1.716 1.716 0 0 1-.655-.196 1.798 1.798 0 0 1-.542-.466 1.736 1.736 0 0 1-.321-.636 1.767 1.767 0 0 1-.038-.68c.038-.227.113-.448.24-.656a2.01 2.01 0 0 1 .503-.56 2.1 2.1 0 0 1 .662-.353c.233-.07.46-.095.693-.076.233.019.447.088.649.202.201.113.384.264.541.466.158.202.265.41.322.636.063.227.075.454.037.68a1.72 1.72 0 0 1-.239.656c-.113.201-.283.39-.491.554Zm-.41-.523a1.13 1.13 0 0 0 .284-.321c.069-.12.107-.252.126-.39a.999.999 0 0 0-.038-.41 1.096 1.096 0 0 0-.208-.397 1.133 1.133 0 0 0-.334-.296 1.064 1.064 0 0 0-.39-.132 1.005 1.005 0 0 0-.41.031 1.147 1.147 0 0 0-.662.517.95.95 0 0 0-.126.39c-.012.139 0 .271.038.41.038.138.107.264.208.397.101.126.208.227.334.296.12.07.252.113.39.132a.98.98 0 0 0 .404-.031c.132-.038.264-.101.384-.196Zm5.349-2.582a2.045 2.045 0 0 1-.712.214c-.24.025-.466 0-.687-.063a1.741 1.741 0 0 1-.598-.328 1.881 1.881 0 0 1-.636-1.26 1.7 1.7 0 0 1 .454-1.266c.163-.177.358-.328.591-.441.265-.133.523-.208.781-.22a1.48 1.48 0 0 1 .738.131l-.246.643a1.1 1.1 0 0 0-.945.025c-.145.07-.258.158-.353.271a.99.99 0 0 0-.252.769 1.244 1.244 0 0 0 .397.788c.107.094.227.163.36.207a.98.98 0 0 0 .409.044c.145-.012.283-.056.428-.126.151-.075.277-.176.372-.302.094-.126.163-.277.208-.447l.667.189c-.056.252-.17.472-.334.674a1.91 1.91 0 0 1-.642.497Zm3.396-1.5-.933-3.27 1.418-.403c.29-.082.56-.107.794-.076.239.032.44.126.604.271a1.2 1.2 0 0 1 .353.58c.07.246.07.472.006.68a1.095 1.095 0 0 1-.378.542 1.914 1.914 0 0 1-.718.353L22.774 4l.252-.428.353 1.241-.75.227Zm.434-1.373-.447-.265.958-.271c.233-.063.39-.164.478-.296.089-.132.107-.29.057-.473a.522.522 0 0 0-.296-.365c-.145-.063-.334-.063-.567 0l-.951.27.245-.459.523 1.859Zm1.65.78-1.158-.95.812-.234 1.16.952-.813.233Zm3.85-1.328 1.84-.17.056.63-2.614.239-.315-3.383 2.558-.24.056.63L28.37.99l.195 2.13Zm-.189-1.393 1.632-.151.057.611-1.632.151-.057-.61Zm4.064 1.808L34.266.296l.775.076L36.23 3.9l-.819-.082-.957-3.106.315.031-1.531 2.867-.8-.076Zm.825-.655.252-.573 1.751.17.145.611-2.148-.208Zm5.582 1.644.743-2.652-1.046-.296.17-.617 2.854.8-.176.617-1.04-.296-.743 2.652-.762-.208Zm5.292 2.054a1.99 1.99 0 0 1-.605-.447 1.718 1.718 0 0 1-.466-1.266 1.828 1.828 0 0 1 .617-1.254c.177-.151.378-.258.599-.328.22-.069.453-.088.693-.069.24.019.479.094.724.208.24.12.441.264.605.44.164.177.284.373.365.593.082.214.114.441.101.674-.012.233-.075.46-.189.693a1.79 1.79 0 0 1-.434.567 1.593 1.593 0 0 1-.599.328c-.22.07-.454.088-.693.07a1.994 1.994 0 0 1-.718-.209Zm.29-.598c.138.069.27.107.41.113a1.1 1.1 0 0 0 .402-.057.952.952 0 0 0 .353-.208 1.11 1.11 0 0 0 .265-.359c.069-.145.113-.29.12-.428a1.03 1.03 0 0 0-.592-1.02 1.03 1.03 0 0 0-.417-.114.965.965 0 0 0-.403.057 1.005 1.005 0 0 0-.353.208 1.11 1.11 0 0 0-.264.359c-.07.145-.114.29-.12.428-.013.139.006.277.05.41a.938.938 0 0 0 .202.352c.095.101.208.19.347.259Zm3.389 2.665 2.079-2.69 1.166.9c.239.19.415.385.529.599.113.214.163.428.145.649-.02.22-.107.428-.259.63-.157.202-.34.34-.541.41a1.178 1.178 0 0 1-.662.018c-.233-.056-.466-.182-.712-.365l-.819-.636.491-.05-.787 1.02-.63-.485Zm1.36-.466-.056-.517.788.611c.189.145.365.214.523.208.157-.006.296-.082.415-.233.114-.151.158-.303.12-.454-.038-.157-.145-.308-.334-.453l-.787-.611.51-.076-1.178 1.525Zm.347 1.789.082-1.5.668.517-.082 1.5-.668-.517Zm3.062 3.03a2.783 2.783 0 0 1-.44-.655 1.745 1.745 0 0 1-.19-.643l.617-.195a1.979 1.979 0 0 0 .48 1.07c.1.114.2.203.29.247.087.05.163.075.238.069a.25.25 0 0 0 .183-.076c.07-.063.101-.132.088-.22a.865.865 0 0 0-.088-.296c-.05-.114-.113-.227-.183-.353a5.642 5.642 0 0 1-.195-.39 1.42 1.42 0 0 1-.126-.404.872.872 0 0 1 .025-.403.802.802 0 0 1 .265-.372.995.995 0 0 1 .498-.24c.189-.03.39 0 .598.095.214.095.429.259.636.498.145.158.265.334.366.523.1.189.164.378.195.554l-.605.208a2 2 0 0 0-.428-.876 1.202 1.202 0 0 0-.29-.245.414.414 0 0 0-.24-.063.32.32 0 0 0-.188.082.261.261 0 0 0-.095.226.765.765 0 0 0 .095.297c.056.107.12.226.189.352.07.126.138.259.195.391.057.132.1.265.126.403a.848.848 0 0 1-.019.397.817.817 0 0 1-.252.372.985.985 0 0 1-.498.233 1.118 1.118 0 0 1-.604-.1c-.215-.077-.429-.247-.643-.486ZM32.57 33.05c.574-2.942.31-3.919.045-5.601-.41-2.627-.265-4.574 3.767-4.712 4.032-.139 5.305 1.07 5.437 4.807.133 3.735-2.413 3.83-3.2 2.425-.788-1.399.132-3.106-1.008-3.106-1.82 0-2.98 8.94-.567 8.896 2.413-.044-.044-3.598 2.715-3.83 2.76-.234 2.936 6.117-.132 7.56-3.34 1.574-7.188.655-7.409-1.676-.22-2.332.353-4.763.353-4.763Zm-10.999 1.096c.536-3.34.126-6.432 0-8.694-.126-2.256 2.886-2.533 6.092-2.287 3.2.246 3.724 4.832 2.041 6.105-1.682 1.272-2.457.472-2.38-.687.094-1.53-1.746-1.984-1.765.195-.019 2.174-.687 4.46-.246 5.696.441 1.234 2.363 1.84 2.489.384.082-.933-1.096-.164-1.588-1.563-.15-.428-.491-2.035 2.684-1.896 3.175.139 3.15 3.604 2.489 5.487-.549 1.563-2.564 3.472-6.943 2.924-4.378-.549-3.339-2.716-2.873-5.664Zm36.616-6.936.157.56c.013.057.07.089.126.076l.567-.139c.485-.12.826.467.48.826l-.404.415c-.038.045-.038.108 0 .145l.403.416c.347.36.006.951-.479.825l-.567-.138a.103.103 0 0 0-.126.075l-.157.561c-.139.479-.82.479-.958 0l-.157-.56a.103.103 0 0 0-.126-.076l-.567.138c-.485.12-.826-.466-.48-.825l.404-.416c.038-.044.038-.107 0-.145l-.403-.415c-.347-.36-.006-.952.479-.826l.567.139a.103.103 0 0 0 .126-.076l.157-.56c.139-.48.82-.48.958 0Zm-52.417 0 .158.56c.013.057.07.089.126.076l.567-.139c.485-.12.826.467.48.826l-.404.415c-.038.045-.038.108 0 .145l.403.416c.347.36.006.951-.479.825l-.567-.138a.103.103 0 0 0-.126.075l-.157.561c-.139.479-.82.479-.958 0l-.157-.56a.103.103 0 0 0-.126-.076l-.567.138c-.485.12-.826-.466-.48-.825l.404-.416c.038-.044.038-.107 0-.145l-.403-.415c-.347-.36-.006-.952.479-.826l.567.139a.103.103 0 0 0 .126-.076l.157-.56c.139-.48.82-.48.958 0Zm2.32 23.568a2.054 2.054 0 0 1-.347-.668 1.606 1.606 0 0 1-.063-.687 1.74 1.74 0 0 1 .208-.648 1.66 1.66 0 0 1 .472-.536c.202-.151.416-.258.643-.315.226-.057.453-.063.68-.031.227.037.447.12.649.245.208.126.39.303.554.517.183.24.31.485.372.737.07.252.076.504.025.75l-.674-.114a1.224 1.224 0 0 0-.012-.504 1.283 1.283 0 0 0-.548-.75.995.995 0 0 0-.8-.12c-.14.039-.272.108-.398.209-.126.094-.22.201-.296.327a1.004 1.004 0 0 0-.107.807c.038.138.107.277.202.403a1.29 1.29 0 0 0 .806.498l-.182.699a2.131 2.131 0 0 1-.65-.315 2.553 2.553 0 0 1-.535-.504Zm.824.195 1.015-.775.434.574-1.096.838-.353-.637Zm3.384 4.247a2.06 2.06 0 0 1-.473-.586 1.832 1.832 0 0 1-.208-.668c-.025-.233 0-.454.07-.68.069-.221.189-.429.352-.618.17-.195.353-.34.567-.441.208-.1.429-.157.662-.164.233-.012.46.025.686.107a2 2 0 0 1 .643.385c.202.176.36.371.473.58.113.213.182.434.207.66.026.234 0 .454-.069.681-.07.22-.189.428-.359.624-.164.189-.353.34-.56.44a1.724 1.724 0 0 1-1.348.063 1.939 1.939 0 0 1-.643-.384Zm.428-.505a1.058 1.058 0 0 0 .775.265c.139-.012.27-.05.397-.113a1.18 1.18 0 0 0 .346-.277 1.104 1.104 0 0 0 .284-.794.927.927 0 0 0-.107-.39 1.107 1.107 0 0 0-.265-.335 1.058 1.058 0 0 0-.775-.264 1.1 1.1 0 0 0-.397.113 1.18 1.18 0 0 0-.346.277 1.104 1.104 0 0 0-.284.794c.007.139.044.27.107.39s.152.234.265.334Zm4.844 4.19a1.92 1.92 0 0 1-.573-.473 1.668 1.668 0 0 1-.327-.604 1.745 1.745 0 0 1-.063-.674c.025-.234.1-.46.227-.68.126-.221.283-.404.466-.549a1.701 1.701 0 0 1 1.304-.328c.24.038.472.12.7.246.258.145.465.321.623.53.157.207.258.434.302.686l-.674.158a1.12 1.12 0 0 0-.189-.454 1.177 1.177 0 0 0-.781-.466.995.995 0 0 0-.775.214 1.133 1.133 0 0 0-.29.346 1.124 1.124 0 0 0-.145.423.989.989 0 0 0 .215.774c.088.114.201.208.34.284a1.103 1.103 0 0 0 .945.063l.214.655c-.24.095-.485.126-.743.101a1.867 1.867 0 0 1-.775-.252Zm3.863 1.77 1.09-3.219 1.392.473c.29.094.523.226.7.39.176.164.289.353.346.567.056.214.044.441-.038.68a1.22 1.22 0 0 1-.378.568c-.17.132-.378.214-.618.233a2.05 2.05 0 0 1-.793-.114l-.983-.334.447-.207-.416 1.222-.75-.259Zm1.134-.888-.22-.466.944.321c.227.076.416.088.567.025.151-.056.252-.176.315-.352a.515.515 0 0 0-.038-.473c-.082-.139-.24-.24-.466-.321l-.945-.322.46-.239-.617 1.827Zm.913 1.581-.416-1.442.8.27.416 1.443-.8-.27Zm4.486.385 1.833.258-.088.624-2.608-.366.472-3.364 2.545.36-.088.623-1.77-.252-.296 2.117Zm.138-1.393 1.62.227-.089.611-1.619-.227.088-.61Zm4.12 2.438 1.342-3.465.775-.037 1.689 3.32-.826.038-1.392-2.936.315-.013-1.096 3.056-.806.037Zm.725-.762.17-.605 1.758-.088.233.586-2.161.107Zm6.231.006-.618-2.684-1.058.246-.145-.623 2.885-.668.145.623-1.058.246.617 2.684-.768.176Zm5.94-1.871c-.245.107-.49.17-.73.177a1.7 1.7 0 0 1-.693-.101 1.614 1.614 0 0 1-.58-.353 1.72 1.72 0 0 1-.41-.586 1.76 1.76 0 0 1-.157-.7 1.73 1.73 0 0 1 .523-1.24c.17-.17.378-.309.624-.416a2.12 2.12 0 0 1 .73-.183c.24-.012.473.02.687.101.22.076.41.195.58.353.17.157.309.353.41.586.1.233.15.466.157.7a1.707 1.707 0 0 1-.523 1.24c-.17.177-.378.315-.617.422Zm-.277-.61a1.2 1.2 0 0 0 .353-.24.931.931 0 0 0 .214-.347c.05-.132.07-.264.07-.403a1.275 1.275 0 0 0-.101-.435 1.138 1.138 0 0 0-.252-.371.973.973 0 0 0-.347-.227 1.091 1.091 0 0 0-.403-.076.997.997 0 0 0-.416.095 1.106 1.106 0 0 0-.352.245.942.942 0 0 0-.215.347.969.969 0 0 0-.063.403c.007.139.038.284.101.435.063.151.151.27.252.372.101.1.214.176.34.226a.985.985 0 0 0 .819-.025Zm4.499-1.683L47.389 55.1l1.203-.844c.245-.177.491-.284.73-.334.24-.044.46-.025.662.056.202.082.378.227.523.435.145.208.227.422.233.643.006.22-.05.428-.176.636a1.913 1.913 0 0 1-.561.567l-.85.599.1-.485.744 1.058-.655.447Zm-.045-1.443-.51-.1.813-.574c.195-.138.315-.283.353-.44.044-.158.006-.31-.101-.467-.107-.151-.24-.24-.403-.252-.158-.012-.334.05-.536.19l-.813.572.076-.51 1.121 1.581Zm1.815.196-1.411-.517.693-.485 1.404.517-.686.485Zm3.685-3.144a2.867 2.867 0 0 1-.623.485 1.824 1.824 0 0 1-.624.233l-.24-.605a1.99 1.99 0 0 0 1.04-.554c.107-.113.183-.214.227-.302a.456.456 0 0 0 .056-.24.265.265 0 0 0-.088-.176.254.254 0 0 0-.227-.076.808.808 0 0 0-.29.114c-.106.063-.22.132-.34.208-.12.075-.245.15-.371.22a2.08 2.08 0 0 1-.397.158.872.872 0 0 1-.403 0 .885.885 0 0 1-.39-.233.981.981 0 0 1-.272-.486 1.02 1.02 0 0 1 .057-.604c.082-.22.233-.441.453-.668.152-.151.316-.284.498-.397.183-.114.366-.19.542-.233l.252.592a1.915 1.915 0 0 0-.844.492 1.339 1.339 0 0 0-.227.302.396.396 0 0 0-.044.245c.012.07.044.133.094.183a.26.26 0 0 0 .233.076.766.766 0 0 0 .29-.114c.101-.063.215-.132.34-.214.12-.082.246-.151.378-.22.133-.07.259-.12.391-.151a.846.846 0 0 1 .397-.007.836.836 0 0 1 .39.227.907.907 0 0 1 .265.479c.038.189.02.39-.063.61-.082.202-.233.423-.46.656Z"/>
+                      </svg>                      
+                      <div class="work-item-wrapper">
+                        <div class="work-item-bar">2-3 days</div>
+                        <p>Scripts/ concepts <br>
+                          preparation</span>
+                        </p>
+                      </div>
+                      <img src="assets/img/work-arrow5.svg" alt="work-arrow" id="work-arrow-5">
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col">
+                    <div class="work-item">
+                      <div class="work-item-wrapper">
+                        <div class="work-item-bar">2-3 days</div>
+                        <p>Creators/ concepts <br>
+                          approval</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>        
+                </div>
+              </div>
+            </section>
+            <section class="about">
+              <div class="container">
+                <div class="about-title">
+                  <h2>About us</h2>
+                  <div class="about-swiper-controls">
+                    <div class="about-swiper-button-prev">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="22" fill="none" viewBox="0 0 33 22">
+                        <path stroke="#FBBF03" stroke-linecap="round" stroke-width="2.465" d="M1.573 11c8.976 0 8.976-8.977 8.976-8.977M1.573 11c8.976 0 8.976 8.977 8.976 8.977m-8.704-8.976h29.583"/>
+                      </svg>                        
+                    </div>
+                    <div class="about-swiper-button-next">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="22" fill="none" viewBox="0 0 33 22">
+                        <path stroke="#FBBF03" stroke-linecap="round" stroke-width="2.465" d="M31.428 11c-8.977 0-8.977-8.977-8.977-8.977M31.428 11c-8.977 0-8.977 8.977-8.977 8.977m8.704-8.976H1.573"/>
+                      </svg>                        
+                    </div>
+                  </div>
+                </div>
+                <div class="about-content">
+                  <div class="about-card">
+                    <img src="assets/img/about-card.svg" alt="about">
+                    <p>We create UGC (user-generated) videos to optimize your user acquisition strategies across all platforms.</p>
+                    <div class="about-card-info">
+                      <h3>Elena Kim</h3>
+                      <p>CEO</p>
+                    </div>
+                  </div>
+                  <div class="about-swiper-content">
+                    <div class="about-swiper-main-wrapper">
+                      <div class="about-swiper swiper-container">
+                        <!-- Custom wrapper -->
+                        <div class="about-swiper-wrapper swiper-wrapper">
+                          <!-- Custom slides -->
+                          <div class="about-swiper-slide swiper-slide">
+                            <div class="about-swiper-slide-wrapper">
+                              <div class="about-slide-img" style="background: url(assets/img/about-team.svg);"></div>
+                              <div class="about-slide-text">
+                                <h3>Ezgi</h3>
+                                <p>Project Team Leader</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="about-swiper-slide swiper-slide">
+                            <div class="about-swiper-slide-wrapper">
+                              <div class="about-slide-img" style="background: url(assets/img/about-team.svg);"></div>
+                              <div class="about-slide-text">
+                                <h3>Ezgi</h3>
+                                <p>Project Team Leader</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="about-swiper-slide swiper-slide">
+                            <div class="about-swiper-slide-wrapper">
+                              <div class="about-slide-img" style="background: url(assets/img/about-team.svg);"></div>
+                              <div class="about-slide-text">
+                                <h3>Ezgi</h3>
+                                <p>Project Team Leader</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="about-swiper-slide swiper-slide">
+                            <div class="about-swiper-slide-wrapper">
+                              <div class="about-slide-img" style="background: url(assets/img/about-team.svg);"></div>
+                              <div class="about-slide-text">
+                                <h3>Ezgi</h3>
+                                <p>Project Team Leader</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="about-swiper-slide swiper-slide">
+                            <div class="about-swiper-slide-wrapper">
+                              <div class="about-slide-img" style="background: url(assets/img/about-team.svg);"></div>
+                              <div class="about-slide-text">
+                                <h3>Ezgi</h3>
+                                <p>Project Team Leader</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="about-swiper-slide swiper-slide">
+                            <div class="about-swiper-slide-wrapper">
+                              <div class="about-slide-img" style="background: url(assets/img/about-team.svg);"></div>
+                              <div class="about-slide-text">
+                                <h3>Ezgi</h3>
+                                <p>Project Team Leader</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="about-swiper-slide swiper-slide">
+                            <div class="about-swiper-slide-wrapper">
+                              <div class="about-slide-img" style="background: url(assets/img/about-team.svg);"></div>
+                              <div class="about-slide-text">
+                                <h3>Ezgi</h3>
+                                <p>Project Team Leader</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="about-swiper-slide swiper-slide">
+                            <div class="about-swiper-slide-wrapper">
+                              <div class="about-slide-img" style="background: url(assets/img/about-team.svg);"></div>
+                              <div class="about-slide-text">
+                                <h3>Ezgi</h3>
+                                <p>Project Team Leader</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="faq">
+              <div class="container">
+                <div class="faq-title">
+                  <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-content">
+                  <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                          <div class="accordion-item-header-wrapper">
+                            What is UGC?
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none" viewBox="0 0 38 20">
+                              <path fill="#FEC200" d="m37.499.655-18.44 18.433L.794.818 37.5.655Z"/>
+                            </svg>                            
+                          </div>    
+                        </div>
+                        <div class="accordion-item-body">
+                          <div class="accordion-item-body-content">
+                            Certainly! Once the video asset is confirmed and payment is completed, full ownership rights are transferred to you. 
+                            <br><br>
+                            Feel free to repurpose your UGC videos on multiple platforms, such as your website, social media channels, paid advertising campaigns, and beyond!               
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-item-header">
+                        <div class="accordion-item-header-wrapper">
+                          Do I have the rights to repurpose the UGC videos that GoCreators produced for me?
+                          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none" viewBox="0 0 38 20">
+                            <path fill="#FEC200" d="m37.499.655-18.44 18.433L.794.818 37.5.655Z"/>
+                          </svg>                            
+                        </div>    
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          Certainly! Once the video asset is confirmed and payment is completed, full ownership rights are transferred to you. 
+                          <br><br>
+                          Feel free to repurpose your UGC videos on multiple platforms, such as your website, social media channels, paid advertising campaigns, and beyond!               
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-header-wrapper">
+                        Can I personally select all the creators for the UGC campaign?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none" viewBox="0 0 38 20">
+                          <path fill="#FEC200" d="m37.499.655-18.44 18.433L.794.818 37.5.655Z"/>
+                        </svg>                            
+                      </div>    
+                    </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                        Certainly! Once the video asset is confirmed and payment is completed, full ownership rights are transferred to you. 
+                        <br><br>
+                        Feel free to repurpose your UGC videos on multiple platforms, such as your website, social media channels, paid advertising campaigns, and beyond!               
+                      </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                  <div class="accordion-item-header">
+                    <div class="accordion-item-header-wrapper">
+                      Will I have an dedicated manager?
+                      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none" viewBox="0 0 38 20">
+                        <path fill="#FEC200" d="m37.499.655-18.44 18.433L.794.818 37.5.655Z"/>
+                      </svg>                            
+                    </div>    
+                  </div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      Certainly! Once the video asset is confirmed and payment is completed, full ownership rights are transferred to you. 
+                      <br><br>
+                      Feel free to repurpose your UGC videos on multiple platforms, such as your website, social media channels, paid advertising campaigns, and beyond!               
+                    </div>
+                  </div>
+                    </div>     
+                  </div>
+                  <div class="faq-bar" style="background: url(assets/img/faq-bar.svg)">
+                    <p>Any questions? <br>
+                      Go to the questions section <span>or email us</span> and we'll help you</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="form-section">
+              <div class="container">
+                <div class="form-title">
+                  <h2>LET’S GONNECT</h2>
+                </div>
+                <form action="#" class="form">
+                  <div class="row">
+                    <div class="col-xl-6 col">
+                      <div class="form-input-wrapper">
+                        <p>Hi! My name is</p>
+                        <input type="text" placeholder="Sean John Combs" required>
+                      </div>    
+                    </div>
+                    <div class="col-xl-6 col">
+                      <div class="form-input-wrapper">
+                        <p>and I’m from</p>
+                        <input type="text" placeholder="Company" required>
+                      </div>   
+                    </div>
+                  </div>
+                  <div class="form-choose-wrapper">
+                    <p>I’m a</p>
+                    <div class="custom-radio-group">
+                      <label class="custom-radio" data-value="Option 1">
+                          <input type="radio" name="custom-radio" value="client" required>
+                          <span class="custom-radio-text">client</span>
+                      </label>
+                      <label class="custom-radio" data-value="Option 2">
+                          <input type="radio" name="custom-radio" value="creator">
+                          <span class="custom-radio-text">creator</span>
+                      </label>
+                  </div>                  
+                  </div>
+                  <div class="form-input-wrapper">
+                    <p>contact me back at</p>
+                    <input type="email" placeholder="seanjohncombs@example.com" required>
+                  </div>
+                  <div class="form-control-wrapper">
+                    <button class="btn" type="submit">Submit</button>
+                    <p>By clicking Submit, you agree to our <span>Terms of Service</span> and that you have read our <span>Privacy Policy</span> </p>
+                  </div>
+                </form>
+              </div>
+            </section>
+        </main>
+    
+        <footer>
+          <div class="container">
+            <div class="footer-items-wrapper">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Cookie Policy</a>
+              <div class="footer-links-wrapper">   
+                  <div class="footer-img-control-item">
+                    <a href="https://www.instagram.com/gocreatorsagency/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" fill="none" viewBox="0 0 28 27">
+                        <path fill="#8E70CE" d="M8 0A7.5 7.5 0 0 0 .5 7.5v12A7.5 7.5 0 0 0 8 27h12a7.5 7.5 0 0 0 7.5-7.5v-12A7.5 7.5 0 0 0 20 0H8Zm15 3a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 23 3Zm-9 3a7.5 7.5 0 1 1-.002 15.002A7.5 7.5 0 0 1 14 6Zm0 3a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"/>
+                      </svg>                                  
+                    </a>
+                  </div>
+                  <div class="footer-img-control-item">
+                    <a href="https://www.linkedin.com/company/gocreatorsagency/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" fill="none" viewBox="0 0 28 27">
+                        <path fill="#8E70CE" d="M24.5 0h-21a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h21a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3Zm-15 21H5.715V10.5H9.5V21ZM7.541 8.575c-1.157 0-1.929-.77-1.929-1.8 0-1.029.771-1.8 2.056-1.8 1.157 0 1.93.772 1.93 1.8 0 1.03-.772 1.8-2.057 1.8ZM23 21h-3.663v-5.739c0-1.587-.977-1.953-1.343-1.953s-1.587.245-1.587 1.953V21h-3.784V10.5h3.784v1.466c.488-.855 1.465-1.466 3.296-1.466 1.832 0 3.297 1.466 3.297 4.761V21Z"/>
+                      </svg>                                  
+                    </a>
+                  </div>
+                  <div class="footer-img-control-item">
+                    <a href="https://www.facebook.com/profile.php?id=100093373343316" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+                        <path fill="#8E70CE" d="M15 .5C6.715.5 0 7.215 0 15.5c0 7.52 5.54 13.73 12.758 14.814V19.475H9.046v-3.944h3.71v-2.623c0-4.344 2.117-6.25 5.728-6.25 1.729 0 2.643.127 3.076.185v3.441h-2.463c-1.533 0-2.069 1.454-2.069 3.092v2.155h4.493l-.609 3.944H17.03v10.87C24.353 29.355 30 23.094 30 15.5c0-8.285-6.715-15-15-15Z"/>
+                      </svg>                                  
+                    </a>
+                  </div>
+                  <div class="footer-img-control-item">
+                    <a href="mailto:hello@gocreators.io" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" fill="none" viewBox="0 0 31 32">
+                        <path fill="#8E70CE" d="M17.913 17.188c-1.35.787-3.038.787-4.5 0l-9-5.4c-.676-.45-1.126-1.126-1.126-1.913v-6.3A2.785 2.785 0 0 1 6.1.763h19.35a2.785 2.785 0 0 1 2.813 2.812v6.3c0 .787-.45 1.463-1.126 1.912l-9.224 5.4Zm-6.3-9.45h8.325c.675 0 1.35-.675 1.35-1.463 0-.787-.675-1.35-1.35-1.35h-8.325c-.788 0-1.35.675-1.35 1.35-.113.788.562 1.463 1.35 1.463Zm0 4.162h8.325c.787 0 1.35-.675 1.35-1.35 0-.787-.675-1.35-1.35-1.35h-8.325c-.788 0-1.35.675-1.35 1.35-.113.675.562 1.35 1.35 1.35Zm17.212.45c.9-.563 2.137.113 2.137 1.238v15.525a2.136 2.136 0 0 1-2.137 2.137H2.612a2.136 2.136 0 0 1-2.137-2.137V13.588c0-1.125 1.125-1.688 2.137-1.238l10.8 6.412c1.35.788 3.15.788 4.5 0l10.913-6.412Z"/>
+                      </svg>                                  
+                    </a>
+                  </div>      
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/sliders.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/swipers.js"></script>
+    <script src="assets/js/radio.js"></script>
+    <script>
+      const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+      accordionItemHeaders.forEach(accordionItemHeader => {
+      accordionItemHeader.addEventListener("click", event => {
+          
+          // Разворачивается только один (при разворачивании второго первый сворачивается)
+          
+          const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+           if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+             currentlyActiveAccordionItemHeader.classList.toggle("active");
+             currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+          }
+
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if(accordionItemHeader.classList.contains("active")) {
+          accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+          }
+          else {
+          accordionItemBody.style.maxHeight = 0;
+          }
+          
+      });
+      });
+  </script>
+  </body>
+</html>
