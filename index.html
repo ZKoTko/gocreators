@@ -134,7 +134,11 @@
                     <img src="assets/img/logo.svg" alt="logo">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbar-burger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -153,7 +157,7 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#">OUR PROCESS</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item nav-item-pc">
                         <div class="nav-link">
                             Learn more
                             <img src="assets/img/dropdown-arrow.svg" alt="arrow">
@@ -164,6 +168,15 @@
                                 <a href="#">Link</a>
                             </div>
                         </div>        
+                      </li>
+                      <li class="nav-item dropdown nav-item-mob">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Learn more
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Link</a></li>
+                          <li><a class="dropdown-item" href="#">Link</a></li>
+                        </ul>
                       </li>
                     </ul>
                   </div>
@@ -177,7 +190,7 @@
                     <div class="banner-content">
                         <div class="banner-text">
                             <h1>Boost</h1>
-                            <h2>your user acquisition with
+                            <h2>your user acquisition with <br>
                                 Our UGC* Creatives</h2>
                             <p>
                                 We help apps win users with our high-performance creatives <br>
@@ -227,7 +240,7 @@
             <section class="partners">
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-6 col">
+                  <div class="col-lg-6 col-12">
                     <div class="partners-item">
                       <div class="partners-item-tiktok">
                         <div class="partners-item-tiktok-wrapper">
@@ -245,7 +258,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col">
+                  <div class="col-lg-6 col-12">
                     <div class="partners-item-percents">
                       <div class="partners-item-percent-wrapper">
                         <h3>150+</h3>
@@ -482,7 +495,7 @@
               </div>
             </section>
             <section class="creators">
-              <img src="assets/img/block-bg.svg" alt="bg" class="creators-bg">
+              <img src="assets/img/test 3.svg" alt="bg" class="creators-bg">
                 <div class="creators-content">
                   <div class="creators-title">
                     <h2>Our creators</h2>
@@ -878,13 +891,13 @@
                 </div>
                 <form action="#" class="form">
                   <div class="row">
-                    <div class="col-xl-6 col">
+                    <div class="col-lg-6 col-12">
                       <div class="form-input-wrapper">
                         <p>Hi! My name is</p>
                         <input type="text" placeholder="Sean John Combs" required>
                       </div>    
                     </div>
-                    <div class="col-xl-6 col">
+                    <div class="col-lg-6 col-12">
                       <div class="form-input-wrapper">
                         <p>and I’m from</p>
                         <input type="text" placeholder="Company" required>
@@ -966,6 +979,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/swipers.js"></script>
     <script src="assets/js/radio.js"></script>
+    <script src="assets/js/placeholder.js"></script>
+    <!-- Accordion -->
     <script>
       const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
@@ -988,7 +1003,6 @@
           else {
           accordionItemBody.style.maxHeight = 0;
           }
-          
       });
       });
   </script>

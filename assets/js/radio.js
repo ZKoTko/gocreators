@@ -22,3 +22,4 @@ document.getElementById('custom-radio-form').addEventListener('submit', (e) => {
         e.preventDefault(); // Отменяем отправку формы
     }
 });
+
