@@ -1568,6 +1568,7 @@ footer {
     position: absolute;
     right: 17%;
     bottom: 9px;
+    transition: .3s;
 }
 .blog-page-item-img {
     height: 360px;
@@ -1628,9 +1629,13 @@ footer {
 .blog-page-item-read-svg {
     z-index: 4;
     position: absolute;
+    transition: .3s;
 }
 .blog-page-item-read-svg:hover {
     fill: #FC7DA8;
+}
+.blog-page-item-read-svg path {
+    transition: .3s;
 }
 .blog-page-item-read-svg:hover path:last-child {
     fill: #fff;
