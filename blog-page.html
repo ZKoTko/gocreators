@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>GoCreators</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: url(assets/img/modal-bg.svg);">
+          
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 23 23">
+                <path stroke="#FBBF03" stroke-width="2" d="m1 1 20.5 20.5m0-20.5L1 21.5"/>
+              </svg>
+                         
+            </button>
+          
+            <div class="modal-title">
+              Request form
+            </div>
+            <div class="modal-content-1">
+              <form>
+                <div class="modal-input-wrapper">
+                  <p>Hi! My name is</p>
+                  <input type="text" placeholder="Sean John Combs">
+                </div>
+                <div class="modal-choose-wrapper">
+                  <p>I’m a</p>
+                  <div class="custom-radio-group">
+                    <label class="custom-radio" data-value="Option 1">
+                        <input type="radio" name="custom-radio" value="client" required>
+                        <span class="custom-radio-text">client</span>
+                    </label>
+                    <label class="custom-radio" data-value="Option 2">
+                        <input type="radio" name="custom-radio" value="creator">
+                        <span class="custom-radio-text">creator</span>
+                    </label>
+                </div> 
+                </div>
+                <div class="modal-input-wrapper">
+                  <p>contact me back at</p>
+                  <input type="text" placeholder="seanjohncombs@example.com">
+                </div>
+                <div class="modal-form-control">
+                  <button class="btn" type="submit">Submit</button>
+                  <p>By clicking Submit, you agree to our Terms of Service <br>
+                    and that you have read our Privacy Policy </p>
+                </div>
+              </form>
+            </div>
+            <div class="modal-content-2">
+              <div class="modal-finish-text">
+                <p>
+                  <span>Great!</span> <br>
+                  We'll get back to you!
+                </p>
+              </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-wrapper" style="background-image: url(assets/img/main-bg.png);">
+        <header>
+            <div class="wrap">
+                <div class="items-wrap">
+                  <div class="items marquee">
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="items marquee">
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/marque-item-icon.svg" alt="marque-item-icon">
+                        GET 20% OFF YOUR FIRST UGC VIDEO PACK
+                    </div>
+                  </div>
+                </div>
+            </div>   
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.svg" alt="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="navbar-burger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR PROJECTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR CLIENTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR TEAM</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR CREATORS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">OUR PROCESS</a>
+                      </li>
+                      <li class="nav-item nav-item-pc">
+                        <div class="nav-link">
+                            Learn more
+                            <img src="assets/img/dropdown-arrow.svg" alt="arrow">
+                        </div>
+                        <div class="nav-dropdown-wrapper">
+                            <div class="nav-dropdown">
+                                <a href="#">Link</a>
+                                <a href="#">Link</a>
+                            </div>
+                        </div>        
+                      </li>
+                      <li class="nav-item dropdown nav-item-mob">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Learn more
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Link</a></li>
+                          <li><a class="dropdown-item" href="#">Link</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="single-blog-page">
+                <div class="container">
+                    <div class="single-blog-content">
+                        <div class="single-blog-buttons">
+                            <button class="single-blog-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="71" height="44" fill="none" viewBox="0 0 71 44">
+                                    <path stroke="#FBBF03" stroke-linecap="round" stroke-width="5.283" d="M3.513 22.021c19.236 0 19.236-19.236 19.236-19.236"/>
+                                    <path stroke="#FBBF03" stroke-linecap="round" stroke-width="5.283" d="M3.513 22.02c19.236 0 19.236 19.237 19.236 19.237M4.098 22.023h63.39"/>
+                                </svg>                                  
+                            </button>
+                            <button class="single-blog-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="71" height="44" fill="none" viewBox="0 0 71 44">
+                                    <path stroke="#FBBF03" stroke-linecap="round" stroke-width="5.283" d="M67.487 22.021c-19.235 0-19.235-19.236-19.235-19.236"/>
+                                    <path stroke="#FBBF03" stroke-linecap="round" stroke-width="5.283" d="M67.487 22.02c-19.236 0-19.236 19.237-19.236 19.237m18.651-19.234H3.512"/>
+                                </svg>                                  
+                            </button>
+                        </div>
+                        <div class="single-blog-wrapper">
+                            <div class="single-blog-image"
+                            style="background: url(assets/img/single-blog.svg);"></div>
+                            <div class="single-blog-text">
+                                <h1>DO NOT Waste Your Budget On Influencers! [3 Reasons]</h1>
+                                <p>
+                                    If your main goal is to get actions (app downloads/sales, etc.), spending money on big influencers may not sound like a good idea.
+                                    <br><br>
+                                    <h3>1st Reason:</h3>
+                                    You will spend around $3,000-$7,000 on 1 TikTok post, and the chances of reaching the average video views (vv) / engagement rate (ER) are really low. Usually, branded videos only reach 20%-40% of the performance of an organic video. Thus, even if the influencer has 300K-400K views per video, your promotional post will probably reach around 90K-100K.
+                                    <br><br>
+                                    <h3>2nd Reason:</h3>
+                                    Don't forget that influencers cannot put the link to your app in their video's caption (it will not be clickable). The only way to show your link is to put it in their bio. Based on our experience, only ~15%-20% of viewers will go from the FYI page (where they initially saw the video) to the influencer's TikTok page, and then only ~5% will actually click the link.
+                                    <br><br>
+                                    <div class="quote">
+                                        <i>USER JOURNEY IS CRUCIAL! In this case, you will lose the main part of potential users in the middle of their way to your App Store page.</i>
+                                    </div>
+                                    <br>
+                                    <h3>3rd Reason:</h3>
+                                    You will pay an additional ~20% if you want to promote the influencer's video. Influencers will grant you access to their Spark ad code for just 30 days. If you want to get unlimited exclusive rights for the video, you might have to pay even more.
+                                    <br><br><br>
+                                    <h2>WHAT SHOULD YOU DO THEN?</h2>
+                                    <br><br>
+                                    Instead of spending $5,000 on 1 video with an unexpected outcome, you can wisely invest the same budget in enhancing your Targeting Ads:<br>
+                                    Spend 50% of your budget on your Targeting Ads (Meta/TikTok/Etc).<br>
+                                    Spend the remaining half of your budget on 15-20 different UGC videos (from different creators who you select) that can help you enhance your Targeting Ads.
+                                    <br><br>
+                                    1. You will get full exclusive rights to the UGC videos indefinitely.<br>
+                                    1. You will get 15-20 UGC videos (from different creators) + TikTok organic postings + 60-day Spark Ads code for each video.<br>
+                                    1. You will get a fully customized video concept plan and exclusive scripts produced for your brand, free of charge.<br>
+                                    <br><br>
+                                    Stay tuned to get more details or just contact us, and we will guide you through the whole process!
+                                    <br><br>
+                                    #ugc #influencermarketing #tiktokmarketing
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="faq">
+              <div class="container">
+                <div class="faq-title">
+                  <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-content">
+                  <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                          <div class="accordion-item-header-wrapper">
+                            What is UGC?
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none" viewBox="0 0 38 20">
+                              <path fill="#FEC200" d="m37.499.655-18.44 18.433L.794.818 37.5.655Z"/>
+                            </svg>                            
+                          </div>    
+                        </div>
+                        <div class="accordion-item-body">
+                          <div class="accordion-item-body-content">
+                            Certainly! Once the video asset is confirmed and payment is completed, full ownership rights are transferred to you. 
+                            <br><br>
+                            Feel free to repurpose your UGC videos on multiple platforms, such as your website, social media channels, paid advertising campaigns, and beyond!               
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-item-header">
+                        <div class="accordion-item-header-wrapper">
+                          Do I have the rights to repurpose the UGC videos that GoCreators produced for me?
+                          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none" viewBox="0 0 38 20">
+                            <path fill="#FEC200" d="m37.499.655-18.44 18.433L.794.818 37.5.655Z"/>
+                          </svg>                            
+                        </div>    
+                      </div>
+                      <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                          Certainly! Once the video asset is confirmed and payment is completed, full ownership rights are transferred to you. 
+                          <br><br>
+                          Feel free to repurpose your UGC videos on multiple platforms, such as your website, social media channels, paid advertising campaigns, and beyond!               
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-header-wrapper">
+                        Can I personally select all the creators for the UGC campaign?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none" viewBox="0 0 38 20">
+                          <path fill="#FEC200" d="m37.499.655-18.44 18.433L.794.818 37.5.655Z"/>
+                        </svg>                            
+                      </div>    
+                    </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                        Certainly! Once the video asset is confirmed and payment is completed, full ownership rights are transferred to you. 
+                        <br><br>
+                        Feel free to repurpose your UGC videos on multiple platforms, such as your website, social media channels, paid advertising campaigns, and beyond!               
+                      </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                  <div class="accordion-item-header">
+                    <div class="accordion-item-header-wrapper">
+                      Will I have an dedicated manager?
+                      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" fill="none" viewBox="0 0 38 20">
+                        <path fill="#FEC200" d="m37.499.655-18.44 18.433L.794.818 37.5.655Z"/>
+                      </svg>                            
+                    </div>    
+                  </div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      Certainly! Once the video asset is confirmed and payment is completed, full ownership rights are transferred to you. 
+                      <br><br>
+                      Feel free to repurpose your UGC videos on multiple platforms, such as your website, social media channels, paid advertising campaigns, and beyond!               
+                    </div>
+                  </div>
+                    </div>     
+                  </div>
+                  <div class="faq-bar" style="background: url(assets/img/faq-bar.svg)">
+                    <p>Any questions? <br>
+                      Go to the questions section <span>or email us</span> and we'll help you</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="form-section">
+              <div class="container">
+                <div class="form-title">
+                  <h2>LET’S GONNECT</h2>
+                </div>
+                <form action="#" class="form">
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                      <div class="form-input-wrapper">
+                        <p>Hi! My name is</p>
+                        <input type="text" placeholder="Sean John Combs" required>
+                      </div>    
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div class="form-input-wrapper">
+                        <p>and I’m from</p>
+                        <input type="text" placeholder="Company" required>
+                      </div>   
+                    </div>
+                  </div>
+                  <div class="form-choose-wrapper">
+                    <p>I’m a</p>
+                    <div class="custom-radio-group">
+                      <label class="custom-radio" data-value="Option 1">
+                          <input type="radio" name="custom-radio" value="client" required>
+                          <span class="custom-radio-text">client</span>
+                      </label>
+                      <label class="custom-radio" data-value="Option 2">
+                          <input type="radio" name="custom-radio" value="creator">
+                          <span class="custom-radio-text">creator</span>
+                      </label>
+                  </div>                  
+                  </div>
+                  <div class="form-input-wrapper">
+                    <p>contact me back at</p>
+                    <input type="email" placeholder="seanjohncombs@example.com" required>
+                  </div>
+                  <div class="form-control-wrapper">
+                    <button class="btn" type="submit">Submit</button>
+                    <p>By clicking Submit, you agree to our <span>Terms of Service</span> and that you have read our <span>Privacy Policy</span> </p>
+                  </div>
+                </form>
+              </div>
+            </section>
+        </main>
+    
+        <footer>
+          <div class="container">
+            <div class="footer-items-wrapper">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Cookie Policy</a>
+              <div class="footer-links-wrapper">   
+                  <div class="footer-img-control-item">
+                    <a href="https://www.instagram.com/gocreatorsagency/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" fill="none" viewBox="0 0 28 27">
+                        <path fill="#8E70CE" d="M8 0A7.5 7.5 0 0 0 .5 7.5v12A7.5 7.5 0 0 0 8 27h12a7.5 7.5 0 0 0 7.5-7.5v-12A7.5 7.5 0 0 0 20 0H8Zm15 3a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 23 3Zm-9 3a7.5 7.5 0 1 1-.002 15.002A7.5 7.5 0 0 1 14 6Zm0 3a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"/>
+                      </svg>                                  
+                    </a>
+                  </div>
+                  <div class="footer-img-control-item">
+                    <a href="https://www.linkedin.com/company/gocreatorsagency/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" fill="none" viewBox="0 0 28 27">
+                        <path fill="#8E70CE" d="M24.5 0h-21a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h21a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3Zm-15 21H5.715V10.5H9.5V21ZM7.541 8.575c-1.157 0-1.929-.77-1.929-1.8 0-1.029.771-1.8 2.056-1.8 1.157 0 1.93.772 1.93 1.8 0 1.03-.772 1.8-2.057 1.8ZM23 21h-3.663v-5.739c0-1.587-.977-1.953-1.343-1.953s-1.587.245-1.587 1.953V21h-3.784V10.5h3.784v1.466c.488-.855 1.465-1.466 3.296-1.466 1.832 0 3.297 1.466 3.297 4.761V21Z"/>
+                      </svg>                                  
+                    </a>
+                  </div>
+                  <div class="footer-img-control-item">
+                    <a href="https://www.facebook.com/profile.php?id=100093373343316" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+                        <path fill="#8E70CE" d="M15 .5C6.715.5 0 7.215 0 15.5c0 7.52 5.54 13.73 12.758 14.814V19.475H9.046v-3.944h3.71v-2.623c0-4.344 2.117-6.25 5.728-6.25 1.729 0 2.643.127 3.076.185v3.441h-2.463c-1.533 0-2.069 1.454-2.069 3.092v2.155h4.493l-.609 3.944H17.03v10.87C24.353 29.355 30 23.094 30 15.5c0-8.285-6.715-15-15-15Z"/>
+                      </svg>                                  
+                    </a>
+                  </div>
+                  <div class="footer-img-control-item">
+                    <a href="mailto:hello@gocreators.io" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" fill="none" viewBox="0 0 31 32">
+                        <path fill="#8E70CE" d="M17.913 17.188c-1.35.787-3.038.787-4.5 0l-9-5.4c-.676-.45-1.126-1.126-1.126-1.913v-6.3A2.785 2.785 0 0 1 6.1.763h19.35a2.785 2.785 0 0 1 2.813 2.812v6.3c0 .787-.45 1.463-1.126 1.912l-9.224 5.4Zm-6.3-9.45h8.325c.675 0 1.35-.675 1.35-1.463 0-.787-.675-1.35-1.35-1.35h-8.325c-.788 0-1.35.675-1.35 1.35-.113.788.562 1.463 1.35 1.463Zm0 4.162h8.325c.787 0 1.35-.675 1.35-1.35 0-.787-.675-1.35-1.35-1.35h-8.325c-.788 0-1.35.675-1.35 1.35-.113.675.562 1.35 1.35 1.35Zm17.212.45c.9-.563 2.137.113 2.137 1.238v15.525a2.136 2.136 0 0 1-2.137 2.137H2.612a2.136 2.136 0 0 1-2.137-2.137V13.588c0-1.125 1.125-1.688 2.137-1.238l10.8 6.412c1.35.788 3.15.788 4.5 0l10.913-6.412Z"/>
+                      </svg>                                  
+                    </a>
+                  </div>      
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/sliders.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/swipers.js"></script>
+    <script src="assets/js/radio.js"></script>
+    <script src="assets/js/placeholder.js"></script>
+    <!-- Accordion -->
+    <script>
+      const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+      accordionItemHeaders.forEach(accordionItemHeader => {
+      accordionItemHeader.addEventListener("click", event => {
+          
+          // Разворачивается только один (при разворачивании второго первый сворачивается)
+          
+          const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+           if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+             currentlyActiveAccordionItemHeader.classList.toggle("active");
+             currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+          }
+
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if(accordionItemHeader.classList.contains("active")) {
+          accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+          }
+          else {
+          accordionItemBody.style.maxHeight = 0;
+          }
+      });
+      });
+  </script>
+  </body>
+</html>
